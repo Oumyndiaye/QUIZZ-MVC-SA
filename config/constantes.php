@@ -8,4 +8,5 @@ define("PATH_SRC",ROOT."src".DIRECTORY_SEPARATOR);
 define("PATH_DB",ROOT."data/db.json");
 define("WEBROOT",str_replace("index.php","",$_SERVER['SCRIPT_NAME']));
 define("PATH_POST","http://localhost:8001");
+define("PATH_VIEWS",ROOT."templates".DIRECTORY_SEPARATOR);
 ?>
