@@ -10,7 +10,8 @@ if(isset($_REQUEST['controllers'])){
         default :
             require_once(PATH_SRC."controllers/securite.controllers.php"); 
     }
-}else{
+}
+else{
     require_once(PATH_SRC."controllers/securite.controllers.php");
 }
 ?>

@@ -1,31 +1,52 @@
 <?php
+require_once(PATH_SRC."models".DIRECTORY_SEPARATOR."user.model.php");
+
+
+
+
 /**
 * Traitement des Requetes POST
 */
+
 if($_SERVER['REQUEST_METHOD']=="POST" ){
     if(isset($_REQUEST['action'])){
-        require_once(ROOT."connexion.html.php");
+        if($_REQUEST['action'] == "connexion" ){
+            $login = $_REQUEST['login'];
+            $password = $_REQUEST['password'];
+            connexion($login,$password);
+        }
+    }else{
+        require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."connexion.html.php");
     }
 }
 /* Traitement des Requetes GET
 */
- if($_SERVER['REQUEST_METHOD']=="GET"){
+if($_SERVER['REQUEST_METHOD']=="GET"){
     if(isset($_REQUEST['action'])){
-        require_once(ROOT."connexion.html.php");
+        if($_REQUEST['action'] == "connexion" ){
+    }
+}
+    else{
+        require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."connexion.html.php");
     }
 } 
 
-/*Recuperation de données methode POST*/
+/*Recuperation de données methode POST
 if($_SERVER['REQUEST_METHOD'] == " POST " ){
+
     if(isset($_REQUEST['action'])){
         if($_REQUEST['action'] === " connexion " ){
             $login = $_REQUEST['login'];
             $password = $_REQUEST['password'];
+            connexion($login,$password);
 
         }
     }
-}
-/*Recuperation de données methode GET*/
+    else{
+        require_once(ROOT."connexion.html.php");
+    }
+}*/
+/*Recuperation de données methode GET
 if($_SERVER['REQUEST_METHOD'] == " GET " ){
     if(isset($_REQUEST['action'])){
         if($_REQUEST['action'] ==="connexion"){
@@ -35,7 +56,7 @@ if($_SERVER['REQUEST_METHOD'] == " GET " ){
 
         }
     }
-}
+}*/
 //US1
 function connexion(string $login,string $password):void {
     $errors=[];

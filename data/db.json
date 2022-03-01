@@ -1,9 +1,9 @@
-{"user" :[
+{"users" :[
 {
     "nom":"Ndiaye",
     "prenom":"oumy",
     "login":"aaondiaye@gmail.com",
-    "password":"joeur",
+    "password":"joueur",
     "role":"ROLE_JOUEUR",
     "score":15
 
@@ -16,9 +16,5 @@
     "role":"ROLE_JOUEUR",
     "score":15
 }
-],
-"questions" :[
-    
 ]
-
 }
