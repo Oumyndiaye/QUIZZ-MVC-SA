@@ -1,34 +1,44 @@
 <?php
 if(isset($_SESSION['errors'])){
-$errors=$_SESSION['errors'];
-unset($_SESSION['errors']);
+    $errors=$_SESSION['errors'];
+    unset($_SESSION['errors']);
 }
 ?>
        <div class="container">
-            <div class="jeu">
-                <img src="<?=WEBROOT."img".DIRECTORY_SEPARATOR."logo-QuizzSA.png"?>"/>
-                <h1>Le plaisir de jouer</h1>
-            </div>
             <form action="<?=WEBROOT?>" method="post">
                 <div class="title"> 
                     <h1>Login Form</h1>
-                    <img src="<?=WEBROOT."img".DIRECTORY_SEPARATOR.""?>"/>
+                     <img src="<?=WEBROOT."img".DIRECTORY_SEPARATOR.""?>"/>
                 </div>
                 <div class="login_pass">
                     <div class="login">
-                        <input type="text" name="login" id="login" placeholder="Login">
+                        <input type="text" name="login" id="login" placeholder="Login " style="font-size: 1.5em;">
                         <img src="<?=WEBROOT."img".DIRECTORY_SEPARATOR."ic-login.png"?>"/>
+                        
                     </div>
+                    <?php if(isset($errors['login'])):?>
+                        <span style="color:red;margin-left:-200px;
+                        font-size:50px"><?=$errors['login']?></span>
+                        <?php endif ?>
+                        
                         <input type="hidden" name="controllers" value="securite">
                         <input type="hidden" name="action" value="connexion">
                     <div class="password">
-                        <input type="text" name="password" id="password" placeholder="Password">
-                        <img src="<?=WEBROOT."img".DIRECTORY_SEPARATOR."ic-password.png"?>"/>                        
+                        <input type="password" name="password" id="password" placeholder="Password" style="font-size: 1.5em;">
+                        <img src="<?=WEBROOT."img".DIRECTORY_SEPARATOR."ic-password.png"?>"/>                       
                     </div>
+                            <?php if(isset($errors['password'])):?>
+                            <span style="color:red;margin-left:-200px;
+                            font-size:50px"><?=$errors['password']?></span>
+                            <?php endif ?>  
                 </div>
-                <div class="submit">
-                    <input type="submit" value="Connexion">
-                    <p><a href="">S'inscrire pour jouer ?</a></p>
+                            <?php if(isset($errors['connexion'])):?>
+                            <span style="color:red;
+                            font-size:50px"><?=$errors['connexion']?></span>
+                            <?php endif ?>
+                <div class="submit" style="font-size: 1em">
+                    <input type="submit" value="Connexion" style="font-size: 1em">
+                   <p><a href="<?=WEBROOT?>?controllers=securite&action=register" style="text-decoration: none;color:gray;font-size: 1.5em">S'inscrire pour jouer ?</a></p>
                 </div>
             </form>
         </div>

@@ -1,18 +1,20 @@
 <?php
-/**
-* Traitement des Requetes POST
-*/
-if($_SERVER['REQUEST_METHOD']=="POST"){
+require_once(PATH_SRC."models".DIRECTORY_SEPARATOR."user.model.php");
+if($_SERVER['REQUEST_METHOD'] =="GET"){
     if(isset($_REQUEST['action'])){
-        require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."connexion.html.php");
+        if(!is_connect()){
+            header("location:".WEBROOT);
+           exit();  
+        }  
+        else{
+            require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."acceuilUser.html.php"); 
+        }
     }
-}
-/* Traitement des Requetes GET
-*/
- if($_SERVER['REQUEST_METHOD']=="GET"){
-    if(isset($_REQUEST['action'])){
-        require_once(ROOT."connexion.html.php");
-    }
-} 
-?>
+}  
+
+        
+ 
+
+
+
 

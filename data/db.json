@@ -1,20 +1,142 @@
-{"users" :[
 {
-    "nom":"Ndiaye",
-    "prenom":"oumy",
-    "login":"aaondiaye@gmail.com",
-    "password":"joueur",
-    "role":"ROLE_JOUEUR",
-    "score":15
-
-},
-{
-    "nom":"ngom",
-    "prenom" :"tening",
-    "login":"aaondiaye@gmail.com",
-    "password":"admin",
-    "role":"ROLE_JOUEUR",
-    "score":15
-}
-]
+    "users": [
+        {
+            "nom": "Ndiaye",
+            "prenom": "oumy",
+            "login": "aaondiaye@gmail.com",
+            "password": "joueur",
+            "role": "ROLE_JOUEUR",
+            "score": 15
+        },
+        {
+            "nom": "wane",
+            "prenom": "Birane Baila",
+            "login": "joeur@gmail.com",
+            "password": "joeur",
+            "role": "ROLE_JOUEUR",
+            "score": 10
+        },
+        {
+            "nom": "Aissatou",
+            "prenom": "faye",
+            "login": "admin@gmail.com",
+            "password": "admine",
+            "role": "ROLE_ADMIN",
+            "score": 0
+        },
+        {
+            "nom": "Awa",
+            "prenom": "Toure",
+            "login": "admin@gmail.com",
+            "password": "awa",
+            "role": "ROLE_JOUEUR",
+            "score": 40
+        },
+        {
+            "nom": "Abdoul Wahab",
+            "prenom": "Sow",
+            "login": "admin@gmail.com",
+            "password": "abdoul",
+            "role": "ROLE_JOUEUR",
+            "score": 60
+        },
+        {
+            "nom": "Ousseynou",
+            "prenom": "Sow",
+            "login": "admin@gmail.com",
+            "password": "weuss",
+            "role": "ROLE_JOUEUR",
+            "score": 50
+        },
+        {
+            "nom": "Alassane",
+            "prenom": "faye",
+            "login": "admin@gmail.com",
+            "password": "alou",
+            "role": "ROLE_JOUEUR",
+            "score": 40
+        },
+        {
+            "nom": "Awa",
+            "prenom": "ndiaye",
+            "login": "admin@gmail.com",
+            "password": "eva",
+            "role": "ROLE_JOUEUR",
+            "score": 30
+        },
+        {
+            "nom": "Thiabaty",
+            "prenom": "keita",
+            "login": "admin@gmail.com",
+            "password": "thiaba",
+            "role": "ROLE_JOUEUR",
+            "score": 10
+        },
+        {
+            "nom": "Abou",
+            "prenom": "konate",
+            "login": "admin@gmail.com",
+            "password": "admin",
+            "role": "ROLE_JOUEUR",
+            "score": 15
+        },
+        {
+            "nom": "Safietou",
+            "prenom": "ndiaye",
+            "login": "admin@gmail.com",
+            "password": "saf",
+            "role": "ROLE_JOUEUR",
+            "score": 20
+        },
+        {
+            "nom": "Diop",
+            "prenom": "fama",
+            "login": "adjafama@gmail.com",
+            "password": "famase",
+            "role": "ROLE_ADMIN"
+        },
+        {
+            "nom": "Ndiaye",
+            "prenom": "Alassane",
+            "login": "aloubouabou@gmail.com",
+            "password": "alassane",
+            "role": "ROLE_ADMIN"
+        },
+        {
+            "nom": "diop",
+            "prenom": "rama",
+            "login": "admin@gmail.com",
+            "password": "ramata",
+            "confirm_password": "ramata",
+            "role": "ROLE_JOUEUR",
+            "score": 0
+        },
+        {
+            "nom": "oumy",
+            "prenom": "oumy",
+            "login": "aaondiaye@gmail.com",
+            "password": "joueur",
+            "confirm_password": "joueur",
+            "role": "ROLE_ADMIN"
+        },
+        {
+            "nom": "ndiaye",
+            "prenom": "gora",
+            "login": "gora@gmail.com",
+            "password": "gorand",
+            "confirm_password": "gorand",
+            "role": "ROLE_ADMIN"
+        }
+    ],
+    "Questions": [
+        {
+            "question": "Quelle est la capitale du senegal",
+            "ReponseFalse1": "diamniadio",
+            "ReponseFalse2": "ndiareme",
+            "ReponseFalse3": "kaolack",
+            "ReponseFalse4": "thies",
+            "ReponseTrue": "dakar"
+        }
+      
+    ]
 }
