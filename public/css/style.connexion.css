@@ -1,0 +1,319 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+body{
+    
+height: 100vh;
+background-image: url(../img/Copie\ de\ img-bg.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+/* overflow: hidden;
+ */}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 40%; 
+    justify-content: space-between;
+    border: 2px solid gray;
+    background-color: azure;
+} 
+.title{
+background-color: #51bfd0;
+width: 90%;
+height: 15%;
+}
+.login{
+width: 100%;
+display: flex;
+justify-content: center;
+background-color: aliceblue;
+}
+.password{
+width: 100%;
+display: flex;
+justify-content: center;  
+background-color: aliceblue;
+}
+.password input{
+    
+    width:80% ;
+    padding: 3%;
+}
+ .login input{
+
+    width:80% ;
+    padding: 3%;
+}
+.password input{
+
+    width:80% ;
+    padding: 3%;
+} 
+.submit {
+    display: flex; 
+    width:80% ;
+    height: 10%;
+    margin-left: 10%; 
+}
+.submit p{
+    margin-left: 5%;   
+}
+.submit input{
+background-color: #51bfd0;
+width: 15%;
+color: azure;
+margin-bottom: 20px;
+}
+.login_pass{
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-evenly;
+    height: 50%;
+    width: 100%;
+    align-items: center;
+}
+.jeu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    position: relative;
+    background-color:#052426 ;
+    color: aliceblue;
+}
+.jeu img{
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    left: 2%;
+    top: 0;
+}
+.password img{
+    width: 5%;
+    height: 70%;
+}
+.login img{
+    width: 5%;
+    height: 70%;
+}
+.title{
+display: flex;
+justify-content: center;
+background-color: #51bfd0;
+color: aliceblue;
+width: 100%;
+padding: 10px;
+justify-content:space-evenly;
+align-items: center;
+}
+ .title h1{
+    font-size: 30px;
+    color: aliceblue;
+}
+.grande{
+    margin: 20px;
+    width: 80%;
+    height: 80%;
+    position:absolute;
+    left: 10%;
+    right: 10%;
+    background-color: #c1c1c1;
+}
+.milieu{
+    display: flex;
+    height: 85%;
+    width: 90%;
+    background-color: #fefdfd; 
+}
+.gauche{
+    height: 100%;
+    width: 50%;
+    background-color: #c1c1c1;
+}
+.droite{
+    height: 85%;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 45%;
+}
+.avatar{
+    height: 40%;
+   background-color:#8cd4e0;
+    display: flex;
+    align-items: center;
+}
+.list{
+display: flex; 
+flex-direction: column;
+ height:40%;
+ font-size: 2em;
+ margin: 2em;
+ background-color: #fefdfd;
+}
+.question{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+.admin{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;   
+}
+.joueur{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+.quest{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+.cercle{
+  width: 150px;
+  height: 150px;  
+  border-radius: 75px;
+  background-color: white;
+ margin-left: 2em;
+}
+.quest img{
+    width: 30px;
+    height: 30px;
+}
+.joueur img{
+    width: 30px;
+    height: 30px;
+}.question img{
+    width: 30px;
+    height: 30px;
+}.admin img{
+    width: 30px;
+    height: 30px;
+}
+.grand_div{
+    display: flex;
+    /* border: 2px solid red; */
+    font-size: 1em;
+    width: 70%;
+    margin-left: 15%;
+    background-color: white;
+}
+.moyen_div{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+/* border: 2px solid green;
+ */}
+.cercle_div{
+height: 90%;
+width: 50%;
+/* border: 3px solid navy;
+ */text-align: center;
+}
+.cercle_div img{
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 70%;
+    margin-top: 10%;
+    border: 5px solid #39ddd6;
+}
+.control{
+font-size: 1.5em;
+/* border: 2px solid blue; */
+height: 90%;
+width: 100%;
+
+} 
+input{
+    padding: 20px;
+}
+button{
+    background-color: #39ddd6;
+    color: white;
+    padding: 10px;
+}
+
+.droite input{
+    position: absolute;
+    left: 85%;  
+}
+.title a{
+    text-decoration: none;
+    background-color: #39ddd6;
+    padding: 1.5em;
+    color: white;  
+}
+a{
+    text-decoration: none;
+}
+.form_control{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-bottom: 0%;
+    height: 10%;
+}
+#form_ins{
+width: 90%;
+margin-left: 5%;
+height: 80vh;
+border: none;
+margin: 2%;
+}
+#form_ins p{
+    font-size: 16px;
+    line-height: 5px;
+}
+#form_ins h3{
+    font-size: 25px;
+    line-height: 5px;
+}
+#av{
+    display: flex;
+    justify-content: space-between;
+}
+.form_control input{
+    height: 5%;
+    border-radius:5%;
+    font-size: 1em;
+}
+
+
+#form_ins button{
+    margin-bottom: 10px;
+    font-size: 25px;
+    width: 30%;
+}
+#av button{
+    font-size:25px ;
+}
+#av input{
+background-color: red;
+}
+
+
+
+  
