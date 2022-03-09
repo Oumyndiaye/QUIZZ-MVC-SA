@@ -11,7 +11,7 @@ if(isset($_REQUEST['controllers'])){
             require_once(PATH_SRC."controllers/admin.controllers.php");
         break;
         default :
-            require_once(PATH_SRC."controllers/securite.controllers.php"); 
+            require_once(PATH_SRC."controllers/error.controllers.php"); 
     }
 }
 else{

@@ -1,4 +1,5 @@
-<form action="<?php WEBROOT ?>" method="POST">
+
+<form action="<?php WEBROOT?>" method="POST">
 <h2>questions:</h2>
     <input type="hidden" name="controllers" value="admin">
     <input type="hidden" name="action" value="creerQuestion">
@@ -15,5 +16,5 @@
         <label for="">ReponseTrue</label>
         <input type="text" name="ReponseTrue" id="ReponseTrue">
         <input type="submit" name="submit" id="Soumettre">
-
 </form>
+

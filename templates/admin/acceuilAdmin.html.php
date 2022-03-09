@@ -1,5 +1,9 @@
-<?php require_once(PATH_SRC."models".DIRECTORY_SEPARATOR."user.model.php");
+<?php
+require_once(PATH_SRC."models".DIRECTORY_SEPARATOR."user.model.php");
 require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."header.inc.html.php");
+/* var_dump($_SESSION[USER_KEY]);
+ */$image=isset($_SESSION[USER_KEY]['photo'])?$_SESSION[USER_KEY]['photo']:'';
+
 ?>
 <div class="grande">
     <div class="title">
@@ -9,16 +13,17 @@ require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."header.inc.html.php");
     <div class="milieu">
         <div class="gauche">
             <div class="avatar">
-                <div class="cercle">
-
+                <div class="cercle" id="cc">
+            <img src="<?=WEBROOT.'upload'.DIRECTORY_SEPARATOR.$image?>"/>
+            <h2><?=$_SESSION[USER_KEY]["prenom"]. "\n".$_SESSION[USER_KEY]["nom"]?></h2> </br>
                 </div>
             </div>
             <div class="list">
-                <div class="question">
-                    <p><a href="<?=WEBROOT."?controllers=admin&action=listerQuestion"?>">Liste Questions</a></p>
-                    <img src="<?=WEBROOT."img".DIRECTORY_SEPARATOR."ic-liste.png"?>"/>
+            <div class="question">
+                <p><a href="<?=WEBROOT."?controllers=admin&action=listerQuestion"?>">Liste Questions</a></p>
+                <img src="<?=WEBROOT."img".DIRECTORY_SEPARATOR."ic-liste.png"?>"/>
 
-                </div>
+            </div>
                 <div class="admin">
                     <p><a href="<?=WEBROOT."?controllers=admin&action=formAdmin"?>">Créer Admin</a></p>
                     <img src="<?=WEBROOT."img".DIRECTORY_SEPARATOR."ic-ajout.png"?>"/>
@@ -27,7 +32,6 @@ require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."header.inc.html.php");
                 <div class="joueur">
                     <p><a href="<?=WEBROOT."?controllers=admin&action=listeJoueur"?>">Liste joueurs</a></p>
                     <img src="<?=WEBROOT."img".DIRECTORY_SEPARATOR."ic-liste.png"?>"/>
-
                 </div>
                 <div class="quest">
                 <p><a href="<?=WEBROOT."?controllers=admin&action=creerQuestion"?>">Créer Questions</a></p>
@@ -37,15 +41,17 @@ require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."header.inc.html.php");
         </div>   
        <div class="droite">
           <?php
-          
-           echo $content_views;
-/*             require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."form.inc.html.php");
- */
-          
+          if(isset($content_views)){
+            echo $content_views; 
+          }
            ?>
-           <input type=submit value=suivant>
+         <!--   <input type=submit id="submit" value=suivant> -->
        </div> 
     </div>
-
 </div>
 
+
+
+
+
+<img src="<?=WEBROOT."img".DIRECTORY_SEPARATOR."chaton.jpg"?>"/>
