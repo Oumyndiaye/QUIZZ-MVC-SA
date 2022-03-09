@@ -2,7 +2,7 @@
  <p style="font-size:2em; text-align:center"><b>LISTE JOUEUR PAR SCORE</b></p>
 <div class="table" style="margin: 2em 5em;height:50vh;font-size:2em;display:flex;justify-content:space-between">
 
-  <table>
+  <table border="3px solid">
       <tr>
           <th>Nom</th>
           <th>Prenom</th>

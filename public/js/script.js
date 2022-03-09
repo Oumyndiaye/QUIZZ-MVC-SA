@@ -5,6 +5,11 @@ const login=document.getElementById('login');
 const password=document.getElementById('password');
 const confirm_password=document.getElementById('confirm_password');
 const creer=document.getElementById('creer');
+const div_left=document.createElement("div");
+const connexion = document.getElementById('connexion');
+const cercle = document.getElementById('cc');
+
+  
 //----------------Functions
 function showError(input,message){
     const formControl = input.parentElement;
@@ -28,8 +33,8 @@ function checkEmail(input){
         return false;
     }
 }
-function checkRequired(inputArray){
-    inputArray.forEach(input => {
+function checkRequired(input){
+    
     if(input.value.trim() === ''){
         showError(input,`${getFieldName(input)} is required!`);
         return false;
@@ -37,7 +42,7 @@ function checkRequired(inputArray){
         showSuccess(input,'Valid');
         return true;
     }
-            })
+            
 }
 function getFieldName(input){
   return  input.id.charAt(0).toUpperCase() + input.id.slice(1);
@@ -79,17 +84,23 @@ password.addEventListener('keyup',function(){
 });
 prenom.addEventListener('keyup',function(){
    // e.preventDefault();
-    checkRequired([prenom]);
+    checkRequired(prenom);
 });
 nom.addEventListener('keyup',function(){
     // e.preventDefault();
-     checkRequired([nom]);
+     checkRequired(nom);
  });
 //
   creer.addEventListener('click',function(e) { 
-    if(!(checkPasswordMatch(password,confirm_password) && checkEmail(login) && validPassword(password) )){
-        e.preventDefault(); 
-    }
-  }); 
 
-  
+    if(!(checkPasswordMatch(password,confirm_password) && checkEmail(login) && validPassword(password) && checkRequired(nom) && checkRequired(prenom))){
+        e.preventDefault(); 
+    } 
+  }); 
+imgInp.addEventListener('change', ()=> {
+   const [file] = imgInp.files;
+    if (file) {
+        img_default.src = URL.createObjectURL(file);
+      }
+});
+ 
