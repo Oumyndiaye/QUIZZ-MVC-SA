@@ -1,343 +1,158 @@
 {
     "users": [
         {
-            "nom": "wane",
-            "prenom": "Birane Baila",
-            "login": "joeur@gmail.com",
-            "password": "joeur",
-            "role": "ROLE_JOUEUR",
-            "score": 10
-        },
-        {
-            "nom": "Aissatou",
-            "prenom": "faye",
-            "login": "admin@gmail.com",
-            "password": "admine",
+            "nom": "sow",
+            "prenom": "fatou ndiaye",
+            "login": "fatou@gmail.com",
+            "password": "ndiaye",
             "role": "ROLE_ADMIN",
-            "score": 0
+            "score": 0,
+            "photo": "fatou_ROLE_ADMIN.jpeg"
         },
         {
-            "nom": "Awa",
-            "prenom": "Toure",
+            "nom": "Ndiaye",
+            "prenom": "Oumy",
             "login": "admin@gmail.com",
-            "password": "awa",
+            "password": "joueur",
             "role": "ROLE_JOUEUR",
-            "score": 40
+            "score": 0,
+            "photo": "admin_ROLE_JOUEUR.jpeg"
         },
         {
-            "nom": "Abdoul Wahab",
-            "prenom": "Sow",
-            "login": "admin@gmail.com",
-            "password": "abdoul",
-            "role": "ROLE_JOUEUR",
-            "score": 60
+            "nom": "Ndiaye",
+            "prenom": "Oumy",
+            "login": "aaondiaye@gmail.com",
+            "password": "joueur",
+            "role": "ROLE_ADMIN",
+            "score": 0,
+            "photo": "aaondiaye_ROLE_ADMIN.jpg"
         },
         {
-            "nom": "Ousseynou",
-            "prenom": "Sow",
-            "login": "admin@gmail.com",
-            "password": "weuss",
+            "nom": "Ngom",
+            "prenom": "Tening",
+            "login": "ngom@gmail.com",
+            "password": "joueur",
             "role": "ROLE_JOUEUR",
-            "score": 50
+            "score": 0,
+            "photo": "ngom_ROLE_JOUEUR.jpeg"
         },
         {
-            "nom": "Alassane",
-            "prenom": "faye",
-            "login": "admin@gmail.com",
-            "password": "alou",
+            "nom": "Sow",
+            "prenom": "Rawane",
+            "login": "sow@gmail.com",
+            "password": "joueur",
             "role": "ROLE_JOUEUR",
-            "score": 40
+            "score": 0,
+            "photo": "sow_ROLE_JOUEUR.jpeg"
         },
         {
-            "nom": "Awa",
-            "prenom": "ndiaye",
-            "login": "admin@gmail.com",
-            "password": "eva",
+            "nom": "Beye",
+            "prenom": "mbaye sow",
+            "login": "beye@gmail.com",
+            "password": "joueur",
             "role": "ROLE_JOUEUR",
-            "score": 30
+            "score": 0,
+            "photo": "beye_ROLE_JOUEUR.jpeg"
         },
         {
-            "nom": "Thiabaty",
-            "prenom": "keita",
-            "login": "admin@gmail.com",
-            "password": "thiaba",
+            "nom": "Ndiaye",
+            "prenom": "Alassane",
+            "login": "aloubouabou@gmail.com",
+            "password": "joueur",
             "role": "ROLE_JOUEUR",
-            "score": 10
+            "score": 0,
+            "photo": "aloubouabou_ROLE_JOUEUR.png"
         },
         {
-            "nom": "Abou",
-            "prenom": "konate",
-            "login": "admin@gmail.com",
-            "password": "admin",
+            "nom": "Niass",
+            "prenom": "Khadim",
+            "login": "niass@gmail.com",
+            "password": "joueur",
             "role": "ROLE_JOUEUR",
-            "score": 15
+            "score": 0,
+            "photo": "niass_ROLE_JOUEUR.png"
         },
         {
-            "nom": "Safietou",
-            "prenom": "ndiaye",
-            "login": "admin@gmail.com",
-            "password": "saf",
+            "nom": "Ndiaye",
+            "prenom": "Rama",
+            "login": "rama@gmail.com",
+            "password": "joueur",
             "role": "ROLE_JOUEUR",
-            "score": 20
+            "score": 0,
+            "photo": "rama_ROLE_JOUEUR.jpeg"
+        },
+        {
+            "nom": "diop",
+            "prenom": "fama",
+            "login": "diop@gmail.com",
+            "password": "joueur",
+            "role": "ROLE_JOUEUR",
+            "score": 0,
+            "photo": "diop_ROLE_JOUEUR.jpeg"
+        },
+        {
+            "nom": "diop",
+            "prenom": "Bamba",
+            "login": "bamba@gmail.com",
+            "password": "joueur",
+            "role": "ROLE_JOUEUR",
+            "score": 0,
+            "photo": "bamba_ROLE_JOUEUR.png"
         },
         {
             "nom": "Diop",
-            "prenom": "fama",
-            "login": "adjafama@gmail.com",
-            "password": "famase",
-            "role": "ROLE_ADMIN"
-        },
-        {
-            "nom": "Ndiaye",
-            "prenom": "Alassane",
-            "login": "aloubouabou@gmail.com",
-            "password": "alassane",
-            "role": "ROLE_ADMIN"
-        },
-        {
-            "nom": "diop",
-            "prenom": "rama",
-            "login": "admin@gmail.com",
-            "password": "ramata",
-            "confirm_password": "ramata",
-            "role": "ROLE_JOUEUR",
-            "score": 0
-        },
-        {
-            "nom": "oumy",
-            "prenom": "oumy",
-            "login": "aaondiaye@gmail.com",
+            "prenom": "Awa",
+            "login": "awa@gmail.com",
             "password": "joueur",
-            "confirm_password": "joueur",
-            "role": "ROLE_ADMIN"
-        },
-        {
-            "nom": "ndiaye",
-            "prenom": "gora",
-            "login": "gora@gmail.com",
-            "password": "gorand",
-            "confirm_password": "gorand",
-            "role": "ROLE_ADMIN"
-        },
-        {
-            "nom": "Ndiaye",
-            "prenom": "Mor Talla",
-            "login": "aaondiaye@gmail.com",
-            "password": "talland",
-            "confirm_password": "talland",
-            "role": "ROLE_ADMIN"
-        },
-        {
-            "nom": "seck",
-            "prenom": "rama",
-            "login": "seck@gmail.com",
-            "password": "seckaa",
-            "confirm_password": "seckaa",
-            "role": "ROLE_ADMIN"
-        },
-        {
-            "nom": "Ndiaye",
-            "prenom": "Oumy",
-            "login": "aaondiaye@gmail.com",
-            "password": "joueur",
-            "confirm_password": "joueur",
-            "role": "ROLE_ADMIN"
-        },
-        {
-            "nom": "Ndiaye",
-            "prenom": "Oumy",
-            "login": "aaondiaye@gmail.com",
-            "password": "joueur",
-            "confirm_password": "joueur",
-            "role": "ROLE_ADMIN"
-        },
-        {
-            "nom": "Ndiaye",
-            "prenom": "Oumy",
-            "login": "aaondiaye@gmail.com",
-            "password": "joueur",
-            "confirm_password": "joueur",
-            "role": "ROLE_ADMIN"
-        },
-        {
-            "nom": "Ndiaye",
-            "prenom": "Oumy",
-            "login": "aaondiaye@gmail.com",
-            "password": "joueur",
-            "confirm_password": "joueur",
-            "role": "ROLE_ADMIN"
-        },
-        {
-            "nom": "Ndiaye",
-            "prenom": "Oumy",
-            "login": "aaondiaye@gmail.com",
-            "password": "joueur",
-            "confirm_password": "joueur",
-            "role": "ROLE_ADMIN"
-        },
-        {
-            "nom": "beye",
-            "prenom": "mbaye sow",
-            "login": "msb@gmail.com",
-            "password": "sowbeye",
-            "confirm_password": "sowbeye",
-            "role": "ROLE_ADMIN"
-        },
-        {
-            "nom": "beye",
-            "prenom": "mbaye sow",
-            "login": "msb@gmail.com",
-            "password": "msbbeye",
-            "confirm_password": "msbbeye",
-            "role": "ROLE_JOUEUR",
-            "score": 0
-        },
-        {
-            "nom": "Ndiaye",
-            "prenom": "Oumy",
-            "login": "admin@gmail.com",
-            "password": "joueur",
-            "confirm_password": "joueur",
-            "role": "ROLE_ADMIN",
-            "score": 0,
-            "photo": "chat.jpg"
-        },
-        {
-            "nom": "Ndiaye",
-            "prenom": "oumy",
-            "login": "aaondiaye@gmail.com",
-            "password": "joueur",
-            "confirm_password": "joueur",
             "role": "ROLE_JOUEUR",
             "score": 0,
-            "photo": "back7.jpeg"
-        },
-        {
-            "nom": "Ndiaye",
-            "prenom": "Alassane",
-            "login": "aloubouabou@gmail.com",
-            "password": "alassane",
-            "confirm_password": "alassane",
-            "role": "ROLE_JOUEUR",
-            "score": 0,
-            "photo": "back5.jpeg"
-        },
-        {
-            "nom": "Ndiaye",
-            "prenom": "Alassane",
-            "login": "aloubouabou@gmail.com",
-            "password": "alassane",
-            "confirm_password": "alassane",
-            "role": "ROLE_JOUEUR",
-            "score": 0,
-            "photo": "back1.jpeg"
-        },
-        {
-            "nom": "niang",
-            "prenom": "fama",
-            "login": "admine@gmail.com",
-            "password": "admine",
-            "confirm_password": "admine",
-            "role": "ROLE_JOUEUR",
-            "score": 0,
-            "photo": "back4.jpeg"
-        },
-        {
-            "nom": "faye",
-            "prenom": "ndebane",
-            "login": "ndebane@gmail.com",
-            "password": "ndebane",
-            "confirm_password": "ndebane",
-            "role": "ROLE_JOUEUR",
-            "score": 0,
-            "photo": "back.jpg"
-        },
-        {
-            "nom": "Samba",
-            "prenom": "Oumy ndiaye",
-            "login": "aaondiaye@gmail.com",
-            "password": "oumynd",
-            "confirm_password": "oumynd",
-            "role": "ROLE_JOUEUR",
-            "score": 0,
-            "photo": "back5.jpeg"
-        },
-        {
-            "nom": "mbengue",
-            "prenom": "khady ",
-            "login": "dykhamb@gmail.com",
-            "password": "dykhamb",
-            "confirm_password": "dykhamb",
-            "role": "ROLE_JOUEUR",
-            "score": 0,
-            "photo": "back5.jpeg"
-        },
-        {
-            "nom": "Ndiaye",
-            "prenom": "Oumy",
-            "login": "aaondiaye@gmail.com",
-            "password": "oumoul",
-            "confirm_password": "oumoul",
-            "role": "ROLE_JOUEUR",
-            "score": 0,
-            "photo": "back6.jpeg"
-        },
-        {
-            "nom": "fall",
-            "prenom": "ya khady",
-            "login": "fall@gmail.com",
-            "password": "fallale",
-            "confirm_password": "fallale",
-            "role": "ROLE_JOUEUR",
-            "score": 0,
-            "photo": "back.jpg"
-        },
-        {
-            "nom": "fata",
-            "prenom": "fata",
-            "login": "fata@gmail.com",
-            "password": "fatafata",
-            "confirm_password": "fatafata",
-            "role": "ROLE_ADMIN",
-            "photo": "chaton.jpg"
-        },
-        {
-            "nom": "diop",
-            "prenom": "Oumy",
-            "login": "admine@gmail.com",
-            "password": "joueur",
-            "confirm_password": "joueur",
-            "role": "ROLE_ADMIN",
-            "photo": "back4.jpeg"
-        },
-        {
-            "nom": "mbengue",
-            "prenom": "ya ware",
-            "login": "mbengue@gmail.com",
-            "password": "mbengue",
-            "confirm_password": "mbengue",
-            "role": "ROLE_ADMIN",
-            "photo": "back7.jpeg"
-        },
-        {
-            "nom": "diop",
-            "prenom": "fama",
-            "login": "aloubouabou@gmail.com",
-            "password": "famata",
-            "confirm_password": "famata",
-            "role": "ROLE_JOUEUR",
-            "score": 0,
-            "photo": null
+            "photo": "awa_ROLE_JOUEUR.JPG"
         }
     ],
     "Questions": [
         {
-            "question": "Quelle est la capitale du senegal",
-            "ReponseFalse1": "diamniadio",
-            "ReponseFalse2": "ndiareme",
-            "ReponseFalse3": "kaolack",
-            "ReponseFalse4": "thies",
-            "ReponseTrue": "dakar"
+            "question": "quelle est le premier president du senegal?",
+            "nbre_point": "20",
+            "type_reponse": "simple",
+            "reponses": [
+                "macky sall",
+                "abdou diouf",
+                "de gaulle",
+                "senghor"
+            ],
+            "reponse_correcte": [
+                "senghor"
+            ]
+        },
+        {
+            "question": "quelle est la capitale du senegal?",
+            "nbre_point": "20",
+            "type_reponse": "text",
+            "reponses": [
+                "dakar"
+            ],
+            "reponse_correcte": [
+                "dakar"
+            ]
+        },
+        {
+            "question": "Les couleurs du drapeau du Senegal",
+            "nbre_point": "30",
+            "type_reponse": "multiple",
+            "reponses": [
+                "green",
+                "black",
+                "gray",
+                "yellow",
+                "white",
+                "red"
+            ],
+            "reponse_correcte": [
+                "green",
+                "yellow",
+                "red"
+            ]
         }
+       
     ]
 }

@@ -4,12 +4,8 @@ const nom=document.getElementById('nom');
 const login=document.getElementById('login');
 const password=document.getElementById('password');
 const confirm_password=document.getElementById('confirm_password');
-const creer=document.getElementById('creer');
-const div_left=document.createElement("div");
-const connexion = document.getElementById('connexion');
-const cercle = document.getElementById('cc');
+const creer=document.getElementById('creer'); 
 
-  
 //----------------Functions
 function showError(input,message){
     const formControl = input.parentElement;
@@ -39,7 +35,7 @@ function checkRequired(input){
         showError(input,`${getFieldName(input)} is required!`);
         return false;
     }else{
-        showSuccess(input,'Valid');
+        showSuccess(input);
         return true;
     }
             
@@ -66,7 +62,6 @@ function validPassword(input){
         return false
     }   
 }
-// var regularExpression = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
 //-------------------Events
  login.addEventListener('keyup',function(e){
   e.preventDefault(); // pour bloquer la soumission du formulaire;
@@ -95,12 +90,22 @@ nom.addEventListener('keyup',function(){
 
     if(!(checkPasswordMatch(password,confirm_password) && checkEmail(login) && validPassword(password) && checkRequired(nom) && checkRequired(prenom))){
         e.preventDefault(); 
-    } 
+     } 
   }); 
 imgInp.addEventListener('change', ()=> {
    const [file] = imgInp.files;
     if (file) {
         img_default.src = URL.createObjectURL(file);
       }
+}); 
+/* var email = document.getElementById("mail");
+
+email.addEventListener("keyup", function (event) {
+  if(email.validity.typeMismatch) {
+    email.setCustomValidity("J'attend un e-mail, mon cher !");
+  } else {
+    email.setCustomValidity("");
+  }
 });
- 
+ */
+

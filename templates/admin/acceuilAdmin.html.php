@@ -1,9 +1,7 @@
 <?php
 require_once(PATH_SRC."models".DIRECTORY_SEPARATOR."user.model.php");
 require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."header.inc.html.php");
-/* var_dump($_SESSION[USER_KEY]);
- */$image=isset($_SESSION[USER_KEY]['photo'])?$_SESSION[USER_KEY]['photo']:'';
-
+$image=isset($_SESSION[USER_KEY]['photo'])?$_SESSION[USER_KEY]['photo']:'';
 ?>
 <div class="grande">
     <div class="title">
@@ -14,8 +12,8 @@ require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."header.inc.html.php");
         <div class="gauche">
             <div class="avatar">
                 <div class="cercle" id="cc">
-            <img src="<?=WEBROOT.'upload'.DIRECTORY_SEPARATOR.$image?>"/>
-            <h2><?=$_SESSION[USER_KEY]["prenom"]. "\n".$_SESSION[USER_KEY]["nom"]?></h2> </br>
+                    <img src="<?= WEBROOT.'upload/'.$_SESSION[USER_KEY]['photo']?>"/>
+                    <h2><?=$_SESSION[USER_KEY]["prenom"]. "\n".$_SESSION[USER_KEY]["nom"]?></h2></br>
                 </div>
             </div>
             <div class="list">
@@ -49,9 +47,3 @@ require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."header.inc.html.php");
        </div> 
     </div>
 </div>
-
-
-
-
-
-<img src="<?=WEBROOT."img".DIRECTORY_SEPARATOR."chaton.jpg"?>"/>

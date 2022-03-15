@@ -21,9 +21,11 @@ function valid_email(string $key,string $data,array &$errors,string $message="em
         $errors[$key]=$message;
     }
 }  
-
-
-
+function verif_login($login, &$errors){
+  if(get_login($login, $errors)){
+    $errors["login"]="ce login existe dejà veuillez ressaisir";
+  }
+}
 
 ?>
 

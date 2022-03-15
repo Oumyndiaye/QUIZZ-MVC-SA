@@ -59,18 +59,24 @@
                             font-size:20px"><?=$errors['confirm_password']?></span>
                             <?php endif ?>  
                     <div id="av">
-                        <h3>Avatar</h3>
-                        <input type="file" value="Choisir un fichier" id="imgInp"   name="monfichier">
+                    <label for="imgInp"><h4>Avatar du joueur</h4></label>  
                     </div>
                 <button id="creer" type="submit" name="submit">Creer un compte</button>               
-</form>
+            </div>
         </div>
-    </div>
-    <div class="cercle_div">
-        <img id="img_default"  src="<?=WEBROOT."img".DIRECTORY_SEPARATOR."chaton.jpg"?>">
-        <h2>Avatar du joueur</h2>
-    </div>
-</div>
+        <div class="cercle_div">
+            <label for="imgInp"> <img id="img_default"  src="<?=WEBROOT."img".DIRECTORY_SEPARATOR."chaton.jpg"?>"></label>      
+            <?php if(isset($errors['monfichier'])):?>
+                <span style="color:red;
+                font-size:20px"><?=$errors['monfichier']?></span>
+            <?php endif ?>
+            <input type="file" value="Choisir un fichier" id="imgInp" name="monfichier">
+            <label for="imgInp"><h2>Avatar du joueur</h2></label>  
+        </div>
+    </div>   
+</form>
+<script type="text/javascript" src="<?=WEBROOT."js/script.js"?>"></script>
+
 
 
 

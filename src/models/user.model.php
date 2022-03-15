@@ -16,7 +16,15 @@ function find_users(string $role):array{
         }
         return
         $result;
-}     
+} 
+function get_login(string $login){
+    $users=find_data("users");
+    foreach ($users as $user) {
+        if( $user["login"]==$login){
+           return true;
+         }   
+    }
+}    
 ?>
 
 

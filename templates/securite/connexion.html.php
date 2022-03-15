@@ -6,7 +6,7 @@ if(isset($_SESSION['errors'])){
 }
 ?>
        <div class="container">
-            <form action="<?=WEBROOT?>" method="post" >
+            <form action="<?=WEBROOT?>"  id="Form" method="post">
                 <input type="hidden" name="controllers" value="securite">
                 <input type="hidden" name="action" value="connexion">
                 <div class="title"> 
@@ -16,15 +16,12 @@ if(isset($_SESSION['errors'])){
                 <div class="login_pass">
                     <div class="login">
                         <input type="text" name="login" id="login" placeholder="Login " style="font-size: 1.5em;">
-                        <img src="<?=WEBROOT."img".DIRECTORY_SEPARATOR."ic-login.png"?>"/>
-                        
+                        <img src="<?=WEBROOT."img".DIRECTORY_SEPARATOR."ic-login.png"?>"/>      
                     </div>
                     <?php if(isset($errors['login'])):?>
                         <span style="color:red;margin-left:-200px;
                         font-size:50px"><?=$errors['login']?></span>
                         <?php endif ?>
-                        
-                        
                     <div class="password">
                         <input type="password" name="password" id="password" placeholder="Password" style="font-size: 1.5em;">
                         <img src="<?=WEBROOT."img".DIRECTORY_SEPARATOR."ic-password.png"?>"/>                       
